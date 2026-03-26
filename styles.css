@@ -1,0 +1,36 @@
+body{ font-family:Segoe UI, Roboto, Arial, sans-serif; background:#f7fafc; color:#0b1220; padding:20px }
+main{ max-width:980px; margin:0 auto }
+h1{ font-size:20px; margin-bottom:8px }
+#status{ margin-bottom:12px; color:#374151 }
+.table{ background:#fff;border-radius:8px;overflow:hidden;border:1px solid #e6eef7 }
+.row{ display:flex; padding:8px 12px; align-items:center; border-bottom:1px solid #f1f5f9 }
+.row:last-child{ border-bottom:0 }
+.sym{ width:100px; font-weight:700 }
+.desc{ flex:1; color:#374151 }
+body{ font-family:Segoe UI, Roboto, Arial, sans-serif; background:#f4f6fb; color:#0b1220; padding:24px }
+main{ max-width:980px; margin:0 auto }
+h1{ font-size:20px; margin-bottom:8px }
+#status{ margin-bottom:12px; color:#374151 }
+.table{ background:#fff;border-radius:8px;overflow:hidden;border:1px solid #e6eef7 }
+.row{ display:flex; padding:8px 12px; align-items:center; border-bottom:1px solid #f1f5f9 }
+.row:last-child{ border-bottom:0 }
+.sym{ width:100px; font-weight:700 }
+.name{ flex:1 }
+.sector{ width:220px; color:#6b7280 }
+:root{--bg:#ffffff;--card:#ffffff;--accent:#0b5cff;--muted:#6b7280;--text:#0b1220}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;margin:0;padding:28px;background:var(--bg);color:var(--text)}
+.app{max-width:1100px;margin:24px auto;background:var(--card);padding:22px;border-radius:10px;box-shadow:0 6px 18px rgba(11,17,32,0.06)}
+h1{margin:0 0 16px;font-size:24px;font-weight:700}
+.controls{display:flex;gap:8px;margin-bottom:14px}
+input{flex:1;padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:transparent;color:var(--text);font-size:15px}
+button{padding:10px 14px;border-radius:8px;border:0;background:var(--accent);color:#fff;cursor:pointer;font-weight:600}
+table{width:100%;border-collapse:collapse;background:transparent}
+th,td{padding:12px 10px;text-align:left;border-bottom:1px solid #eef0f5;font-size:15px}
+tbody tr:hover{background:#fbfdff}
+.note{color:var(--muted);font-size:14px;margin-top:12px}
+.up{color:#047857}
+.down{color:#b91c1c}
+
+.app .tradingview-widget-container { width:100%; }
+.tradingview-widget-container iframe{ border-radius:6px }

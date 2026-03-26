@@ -1,0 +1,12 @@
+{
+  "name": "sahamme",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test-fn": "node -e \"const fn=require('./netlify/functions/yahoo-quote.js'); (async()=>{ const out=await fn.handler({queryStringParameters:{symbols:'BBCA.JK'}},{}); console.log(out); })()\""
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}

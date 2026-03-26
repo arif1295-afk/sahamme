@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Daftar Saham IDX — TradingView</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Daftar Saham IDX (TradingView)</h1>
+    <div id="status">Memuat daftar...</div>
+    <div id="list"></div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Daftar Saham IDX - Lokal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Daftar Saham IDX (dari idx-bei)</h1>
+    <div id="status">Memuat...</div>
+    <div id="list"></div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Daftar Saham Indonesia (Real-time)</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="robots" content="noindex">
+</head>
+<body//api.quantumstock.com/api/v1/historical/{symbol}ody>
+  <div class="app">
+    <header style="display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="analysis.html" class="nav-link">Analisis</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <h1 style="margin:0;font-size:20px">SahamMe — Daftar Saham Indonesia</h1>
+      </div>
+      <div id="clock" style="font-weight:600;color:#374151"></div>
+    </header>
+
+    <div class="controls" style="margin-bottom:12px;align-items:center;display:flex;gap:8px">
+      <input id="searchInput" placeholder="Cari ticker, contoh: BBCA atau BBCA.JK" style="max-width:360px" />
+      <button id="searchBtn">Cari</button>
+      <label style="margin-left:auto;display:flex;align-items:center;gap:8px"><input id="liveToggle" type="checkbox" /> Live</label>
+      <label style="display:flex;align-items:center;gap:8px"><input id="autoRefreshToggle" type="checkbox" checked /> Auto-refresh</label>
+      <label style="display:flex;align-items:center;gap:8px"><input id="autoAnalyzeToggle" type="checkbox" /> Auto-analyze</label>
+      <button id="openAnalyzeBtn" style="margin-left:8px;background:#0b5cff;color:#fff">Analisis</button>
+    </div>
+
+    <div id="live-ticker" style="margin-bottom:12px"></div>
+
+    <div id="market-overview"></div>
+
+    <p class="note">Menampilkan seluruh saham Bursa Efek Indonesia (IDX). Live update via Yahoo Finance (proxy) saat `Live` diaktifkan.</p>
+
+    <div id="analysis" style="margin-top:18px">
+      <h2 style="font-size:18px;margin:0 0 8px">Hasil Analisis Scalping</h2>
+      <div id="analysisResults" style="min-height:60px;background:#fbfdff;border:1px solid #eef0f5;padding:12px;border-radius:8px;color:#0b1220"></div>
+    </div>
+  </div>
+
+  <script src="clock.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
